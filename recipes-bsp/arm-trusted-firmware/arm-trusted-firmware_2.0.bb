@@ -6,11 +6,16 @@ inherit deploy
 
 PROVIDES = "virtual/arm-trusted-firmware"
 
-# SRC_URI = "https://github.com/ARM-software/${PN}/archive/v${PV}.tar.gz"
+# SRC_URI = "https://github.com/ARM-software/${PN}/archive/v${PV}.tar.gz \
+#            file://0001-ATF-set-fno-stack-protector.patch"
+# 
+# SRC_URI[md5sum] = "21038abbf572c273fa87d296bcd5dad2"
+# SRC_URI[sha256sum] = "7d699a1683bb7a5909de37b6eb91b6e38db32cd6fc5ae48a08eb0718d6504ae4"
 
 BRANCH = "master"
-SRC_URI = "git://github.com/ARM-software/arm-trusted-firmware.git;protocol=git;branch=${BRANCH}"
 SRCREV ?= "${AUTOREV}"
+SRC_URI = "git://github.com/ARM-software/arm-trusted-firmware.git;protocol=git;branch=${BRANCH} \
+           file://0001-ATF-set-fno-stack-protector.patch"
 
 S = "${WORKDIR}/git"
 
