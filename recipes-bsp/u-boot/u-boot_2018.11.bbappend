@@ -5,6 +5,8 @@ SRC_URI += "file://boot.txt \
 
 DEPENDS += "arm-trusted-firmware u-boot-tools-native"
 
+do_configure[depends] += "arm-trusted-firmware:do_deploy"
+
 do_configure_prepend() {
     if [ ! -f ${B}/bl31.bin ]; then
         ln ${DEPLOY_DIR}/images/${MACHINE}/bl31-${MACHINE}.bin ${B}/bl31.bin
