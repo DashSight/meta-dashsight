@@ -13,6 +13,8 @@ S = "${WORKDIR}/git"
 
 DEPENDS += "python3-native python3-mako python3-mako-native gettext-native libdrm"
 
+DEPENDS += "${@bb.utils.contains('PACKAGECONFIG', 'x11', 'xrandr', '', d)}"
+
 PACKAGECONFIG[sun4i] = ""
 GALLIUMDRIVERS_append ="${@bb.utils.contains('PACKAGECONFIG', 'sun4i', ',lima,sun4i', '', d)}"
 
