@@ -1,12 +1,9 @@
 # require recipes-graphics/mesa/mesa.inc
 
-FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
-
 BRANCH = "lima-18.3"
 
-SRCREV = "0a153b2aae8f0c58862d58734f6306d824a97db8"
+SRCREV = "8e713e4781982c700bfc7b09279146189d525a86"
 SRC_URI = "git://gitlab.freedesktop.org/lima/mesa.git;branch=${BRANCH} \
-           file://0001-elg-Fix-mising-NULL-compile-failure.patch \
 "
 
 S = "${WORKDIR}/git"
