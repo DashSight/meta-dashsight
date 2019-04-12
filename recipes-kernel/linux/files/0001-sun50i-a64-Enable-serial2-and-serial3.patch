@@ -1,0 +1,36 @@
+From d21a7ac85c2f4303986b7d92cafced0d1e639a1c Mon Sep 17 00:00:00 2001
+From: Alistair Francis <alistair@alistair23.me>
+Date: Thu, 11 Apr 2019 21:25:44 -0700
+Subject: [PATCH] sun50i-a64: Enable serial2 and serial3
+
+Signed-off-by: Alistair Francis <alistair@alistair23.me>
+---
+ .../dts/allwinner/sun50i-a64-sopine-baseboard.dts    | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
+index 9ee27c35c384..d5a590eaddbb 100644
+--- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
++++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
+@@ -241,6 +241,18 @@
+ 	};
+ };
+ 
++&uart2 {
++        pinctrl-names = "default";
++        pinctrl-0 = <&uart2_pins>;
++        status = "okay";
++};
++
++&uart3 {
++        pinctrl-names = "default";
++        pinctrl-0 = <&uart3_pins>;
++        status = "okay";
++};
++
+ &usb_otg {
+ 	dr_mode = "host";
+ 	status = "okay";
+-- 
+2.20.1
+
