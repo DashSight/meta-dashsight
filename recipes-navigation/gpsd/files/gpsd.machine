@@ -1,0 +1,6 @@
+# Default settings for gpsd.
+START_DAEMON="true"
+GPSD_OPTIONS=""
+DEVICES="/dev/ttyS2"
+USBAUTO="true"
+PSD_SOCKET="/var/run/gpsd.sock"
