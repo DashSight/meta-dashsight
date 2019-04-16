@@ -1,17 +1,18 @@
 SUMMARY = "A program for insight into car driving and racing"
 LICENSE = "Apachev2"
 LIC_FILES_CHKSUM = "file://../LICENSE;md5=86d3f3a95c324c9479bd8986968f4327"
-DEPENDS = "osm-gps-map glib-2.0 gtk+3 gdk-pixbuf gpsd"
+DEPENDS = "osm-gps-map glib-2.0 gtk+3 gdk-pixbuf gpsd dconf"
 
 SRCREV = "${AUTOREV}"
 SRC_URI = "git://git@github.com/alistair23/DashSight.git;protocol=ssh \
           "
 
-inherit autotools-brokensep python3native
+inherit autotools-brokensep python3native pkgconfig
 
 S = "${WORKDIR}/git/src"
 
-EXTRA_OEMAKE += "LFLAGS=\'${LDFLAGS} -lgps\'"
+CFLAGS[unexport] = "1"
+LDFLAGS += "-lgps"
 
 do_install() {
     # Install the binary
