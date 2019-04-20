@@ -1,0 +1,14 @@
+[Unit]
+Description=DashSight
+DefaultDependencies=no
+After=systemd-user-sessions.service systemd-logind.service xserver-nodm.service
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/default/dashsight.conf
+WorkingDirectory=@LIBEXECDIR@/dashsight/
+ExecStart=@BINDIR@/DashSight
+
+[Install]
+WantedBy=multi-user.target
+
