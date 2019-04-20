@@ -1,10 +1,11 @@
 [Unit]
 Description=DashSight
 DefaultDependencies=no
-After=systemd-user-sessions.service systemd-logind.service xserver-nodm.service
+After=systemd-user-sessions.service systemd-logind.service
 
 [Service]
 Type=simple
+Restart=on-success
 EnvironmentFile=-/etc/default/dashsight.conf
 WorkingDirectory=@LIBEXECDIR@/dashsight/
 ExecStart=@BINDIR@/DashSight
