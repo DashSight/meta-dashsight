@@ -1,6 +1,8 @@
 FILESEXTRAPATHS_append := "${THISDIR}/files:"
 
-SRC_URI += "file://wlan.network"
+SRC_URI += "file://wlan.network \
+            file://dashsight.rules \
+	   "
 
 do_install_append() {
     install -d ${D}/${sysconfdir}/systemd/network
