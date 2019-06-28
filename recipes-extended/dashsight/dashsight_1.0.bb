@@ -1,6 +1,6 @@
 SUMMARY = "A program for insight into car driving and racing"
 LICENSE = "Apachev2"
-LIC_FILES_CHKSUM = "file://../LICENSE;md5=86d3f3a95c324c9479bd8986968f4327"
+LIC_FILES_CHKSUM = "file://../LICENSE;md5=5335066555b14d832335aa4660d6c376"
 DEPENDS = "osm-gps-map glib-2.0 gtk+3 gdk-pixbuf gpsd dconf"
 
 SRCREV = "${AUTOREV}"
