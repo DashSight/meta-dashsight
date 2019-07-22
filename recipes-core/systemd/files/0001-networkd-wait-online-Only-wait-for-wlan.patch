@@ -1,0 +1,29 @@
+From 717bef8a4628585cd84028d904ae3f811cd7fb63 Mon Sep 17 00:00:00 2001
+From: Alistair Francis <alistair@alistair23.me>
+Date: Sun, 21 Jul 2019 20:48:12 -0700
+Subject: [PATCH] networkd-wait-online: Only wait for wlan
+
+Only wait for a connection from thw wlan0 interface and timeout after
+20 seconds.
+
+Signed-off-by: Alistair Francis <alistair@alistair23.me>
+---
+ units/systemd-networkd-wait-online.service.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/units/systemd-networkd-wait-online.service.in b/units/systemd-networkd-wait-online.service.in
+index 7666e16669..2a8b6889a5 100644
+--- a/units/systemd-networkd-wait-online.service.in
++++ b/units/systemd-networkd-wait-online.service.in
+@@ -18,7 +18,7 @@ Before=network-online.target shutdown.target
+ 
+ [Service]
+ Type=oneshot
+-ExecStart=@rootlibexecdir@/systemd-networkd-wait-online
++ExecStart=@rootlibexecdir@/systemd-networkd-wait-online -i wlan0 --timeout=20
+ RemainAfterExit=yes
+ 
+ [Install]
+-- 
+2.21.0
+
