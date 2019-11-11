@@ -51,6 +51,6 @@ FILES_${PN} += "${bindir}/*.png"
 FILES_${PN} += "/*.png"
 FILES_${PN} += "/home/root/*.png"
 
-RDEPENDS_${PN} = "osm-gps-map gpsd python3-misc python3-obd"
+RDEPENDS_${PN} = "osm-gps-map gpsd gpsd-systemd python3-misc python3-obd"
 
 SYSTEMD_SERVICE_${PN} = "dashsight.service"
