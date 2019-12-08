@@ -5,7 +5,8 @@ After=systemd-user-sessions.service systemd-logind.service
 
 [Service]
 Type=simple
-Restart=on-success
+Restart=on-failure
+RestartSec=2
 EnvironmentFile=-/etc/default/dashsight.conf
 WorkingDirectory=@LIBEXECDIR@/dashsight/
 ExecStart=@BINDIR@/DashSight
