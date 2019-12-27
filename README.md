@@ -19,6 +19,9 @@ This layer depends on:
 * URI: git://github.com/alistair23/meta-pine64
   * branch: master
   * revision: HEAD
+* URI: https://github.com/meta-rust/meta-rust.git
+  * branch: master
+  * revision: HEAD
 
 ## Building
 
