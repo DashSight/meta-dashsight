@@ -16,6 +16,9 @@ S = "${WORKDIR}/git/src"
 CFLAGS[unexport] = "1"
 LDFLAGS += "-lgps"
 
+LDFLAGS += "-lpython${PYTHON_BASEVERSION}${PYTHON_ABI}"
+BUILD_LDFLAGS += "-lpython${PYTHON_BASEVERSION}${PYTHON_ABI}"
+
 do_install() {
     # Install the binary
     install -d ${D}/${bindir}
