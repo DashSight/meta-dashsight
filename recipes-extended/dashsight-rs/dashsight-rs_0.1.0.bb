@@ -24,6 +24,7 @@ SRC_URI = "git://github.com/alistair23/DashSight.git;branch=rust-rewrite \
     crate://crates.io/futures-macro/0.3.1 \
     crate://crates.io/futures-task/0.3.1 \
     crate://crates.io/futures-util/0.3.1 \
+    crate://crates.io/glib/0.9.3 \
     crate://crates.io/gdk-pixbuf-sys/0.9.1 \
     crate://crates.io/gdk-pixbuf/0.8.0 \
     crate://crates.io/gdk-sys/0.9.1 \
