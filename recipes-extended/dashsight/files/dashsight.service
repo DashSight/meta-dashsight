@@ -9,7 +9,7 @@ Restart=on-failure
 RestartSec=2
 EnvironmentFile=-/etc/default/dashsight.conf
 WorkingDirectory=@LIBEXECDIR@/dashsight/
-ExecStart=@BINDIR@/DashSight
+ExecStart=@BINDIR@/dashsight
 
 [Install]
 WantedBy=multi-user.target

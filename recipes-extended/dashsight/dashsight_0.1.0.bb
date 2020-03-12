@@ -3,10 +3,10 @@ LICENSE = "Apachev2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=5335066555b14d832335aa4660d6c376"
 DEPENDS = "glib-2.0 gtk+3 gdk-pixbuf gpsd dconf pango clutter-gtk-1.0 libchamplain"
 
-inherit cargo
+inherit cargo systemd
 
 SRCREV = "${AUTOREV}"
-SRC_URI = "git://github.com/alistair23/DashSight.git;branch=rust-rewrite \
+SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/aho-corasick/0.7.7 \
     crate://crates.io/atk-sys/0.9.1 \
     crate://crates.io/atk/0.8.0 \
@@ -73,5 +73,36 @@ SRCREV_FORMAT .= "_champlain"
 SRCREV_champlain = "${AUTOREV}"
 EXTRA_OECARGO_PATHS += "${WORKDIR}/champlain"
 
+do_install_append() {
+    # Install the Python script that is called
+    install -m 644 ${B}/src/tools/obdii_connect.py ${D}/${bindir}/
+
+    # Install the images for buttons
+    install -d ${D}/${libexecdir}/dashsight/icons
+    install -m 444 ${B}/icons/*.png ${D}/${libexecdir}/dashsight/icons/
+
+    # Install the CSS file in the home directory
+    install -m 444 ${B}/src/theme.css ${D}/${libexecdir}/dashsight/
+
+    # Install the test tracks
+    install -m 666 ${S}/tests/* ${D}/${libexecdir}/dashsight/
+
+    if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
+        install -d ${D}${systemd_unitdir}/system
+        install -m 644 ${WORKDIR}/dashsight.service ${D}${systemd_unitdir}/system/
+        sed -i -e 's,@BINDIR@,${bindir},g' ${D}${systemd_unitdir}/system/dashsight.service
+        sed -i -e 's,@LIBEXECDIR@,${libexecdir},g' ${D}${systemd_unitdir}/system/dashsight.service
+
+        install -d ${D}${sysconfdir}/default
+        install -m 644 ${WORKDIR}/dashsight.conf ${D}${sysconfdir}/default/
+    fi
+}
+
+FILES_${PN} += "/home/root/theme.css"
+FILES_${PN} += "${bindir}/*.png"
+FILES_${PN} += "/*.png"
+FILES_${PN} += "/home/root/*.png"
+
 RDEPENDS_${PN} = "gpsd gpsd-systemd python3-misc python3-obd"
 
+SYSTEMD_SERVICE_${PN} = "dashsight.service"
