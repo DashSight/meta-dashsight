@@ -30,13 +30,13 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/gdk-sys/0.9.1 \
     crate://crates.io/gdk/0.12.0 \
     crate://crates.io/gio-sys/0.9.1 \
-    crate://crates.io/gio/0.8.0 \
+    crate://crates.io/gio/0.8.1 \
     crate://crates.io/glib-sys/0.9.1 \
     crate://crates.io/glib/0.9.1 \
     crate://crates.io/gobject-sys/0.9.1 \
     crate://crates.io/gpsd_proto/0.5.1 \
     crate://crates.io/gtk-sys/0.9.2 \
-    crate://crates.io/gtk/0.8.0 \
+    crate://crates.io/gtk/0.8.1 \
     crate://crates.io/itoa/0.4.5 \
     crate://crates.io/lazy_static/1.4.0 \
     crate://crates.io/libc/0.2.66 \
