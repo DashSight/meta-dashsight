@@ -4,7 +4,7 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=f457cf0e901dfa16d32f5ca1999b7d9b"
 
 SRCREV = "${AUTOREV}"
-SRC_URI = "git://github.com/alistair23/MediaTek-GPS-Utils.git \
+SRC_URI = "git://github.com/DashSight/MediaTek-GPS-Utils.git \
           "
 
 S = "${WORKDIR}/git"
