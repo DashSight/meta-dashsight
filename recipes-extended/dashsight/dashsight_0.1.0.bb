@@ -79,7 +79,7 @@ do_install_append() {
 
     # Install the images for buttons
     install -d ${D}/${libexecdir}/dashsight/icons
-    install -m 444 ${B}/icons/*.png ${D}/${libexecdir}/dashsight/icons/
+    install -m 444 ${B}/src/display/icons/*.png ${D}/${libexecdir}/dashsight/icons/
 
     # Install the CSS file in the home directory
     install -m 444 ${B}/src/theme.css ${D}/${libexecdir}/dashsight/
