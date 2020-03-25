@@ -75,7 +75,7 @@ EXTRA_OECARGO_PATHS += "${WORKDIR}/champlain"
 
 do_install_append() {
     # Install the Python script that is called
-    install -m 644 ${B}/src/tools/obdii_connect.py ${D}/${bindir}/
+    install -m 644 ${B}/src/obdii_connect.py ${D}/${bindir}/
 
     # Install the images for buttons
     install -d ${D}/${libexecdir}/dashsight/icons
