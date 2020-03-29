@@ -59,7 +59,7 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/ryu/1.0.3 \
     crate://crates.io/serde/1.0.105 \
     crate://crates.io/serde_derive/1.0.105 \
-    crate://crates.io/serde_json/1.0.48 \
+    crate://crates.io/serde_json/1.0.50 \
     crate://crates.io/slab/0.4.2 \
     crate://crates.io/syn/1.0.17 \
     crate://crates.io/thread_local/1.0.1 \
