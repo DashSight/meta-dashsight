@@ -1,0 +1,39 @@
+From c4fd90168a1b937b096aa8164d0704b18b21645d Mon Sep 17 00:00:00 2001
+From: Alistair Francis <alistair@alistair23.me>
+Date: Sun, 29 Mar 2020 17:37:30 -0700
+Subject: [PATCH] arm64: allwinner: sopine-baseboard: Expose ADX1345
+ accelerometer
+
+Signed-off-by: Alistair Francis <alistair@alistair23.me>
+---
+ .../dts/allwinner/sun50i-a64-sopine-baseboard.dts  | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
+index 26bffce31f37..cff79677d950 100644
+--- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
++++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
+@@ -159,6 +159,20 @@ gt911@5d {
+ 	};
+ };
+ 
++&i2c1 {
++	pinctrl-names = "default";
++	pinctrl-0 = <&i2c1_pins>;
++	status = "okay";
++
++	accelerometer@2a {
++		compatible = "adi,adxl345";
++		reg = <0x53>;
++
++		interrupt-parent = <&pio>;
++		interrupts = <7 9 IRQ_TYPE_EDGE_RISING>; /* PH9 */
++	};
++};
++
+ &reg_ldo_io0 {
+ 	regulator-min-microvolt = <3300000>;
+ 	regulator-max-microvolt = <3300000>;
+-- 
+2.25.1
+
