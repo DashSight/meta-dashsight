@@ -109,6 +109,6 @@ FILES_${PN} += "${bindir}/*.png"
 FILES_${PN} += "/*.png"
 FILES_${PN} += "/home/root/*.png"
 
-RDEPENDS_${PN} = "gpsd gpsd-systemd python3-misc python3-obd adwaita-icon-theme ttf-droid-sans-mono"
+RDEPENDS_${PN} = "gpsd gpsd-systemd libiio python3-misc python3-obd adwaita-icon-theme ttf-droid-sans-mono"
 
 SYSTEMD_SERVICE_${PN} = "dashsight.service"
