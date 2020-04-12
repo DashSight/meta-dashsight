@@ -11,6 +11,8 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/atk-sys/0.9.1 \
     crate://crates.io/atk/0.8.0 \
     crate://crates.io/autocfg/1.0.0 \
+    crate://crates.io/backtrace-sys/0.1.35 \
+    crate://crates.io/backtrace/0.3.46 \
     crate://crates.io/bitflags/1.2.1 \
     crate://crates.io/cairo-rs/0.8.1 \
     crate://crates.io/cairo-sys-rs/0.9.2 \
@@ -18,6 +20,7 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/chrono/0.4.11 \
     crate://crates.io/cpython/0.3.0 \
+    crate://crates.io/error-chain/0.12.2 \
     crate://crates.io/futures-channel/0.3.4 \
     crate://crates.io/futures-core/0.3.4 \
     crate://crates.io/futures-executor/0.3.4 \
@@ -37,34 +40,40 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/gpsd_proto/0.5.1 \
     crate://crates.io/gtk-sys/0.9.2 \
     crate://crates.io/gtk/0.8.1 \
+    crate://crates.io/industrial-io/0.2.0 \
     crate://crates.io/itoa/0.4.5 \
     crate://crates.io/lazy_static/1.4.0 \
     crate://crates.io/libc/0.2.68 \
+    crate://crates.io/libiio-sys/0.2.0 \
     crate://crates.io/log/0.4.8 \
     crate://crates.io/memchr/2.3.3 \
+    crate://crates.io/nix/0.16.1 \
     crate://crates.io/num-integer/0.1.42 \
     crate://crates.io/num-traits/0.2.11 \
     crate://crates.io/pango-sys/0.9.1 \
     crate://crates.io/pango/0.8.0 \
     crate://crates.io/pin-utils/0.1.0-alpha.4 \
     crate://crates.io/pkg-config/0.3.17 \
-    crate://crates.io/proc-macro-hack/0.5.14 \
+    crate://crates.io/proc-macro-hack/0.5.15 \
     crate://crates.io/proc-macro-nested/0.1.4 \
-    crate://crates.io/proc-macro2/1.0.9 \
+    crate://crates.io/proc-macro2/1.0.10 \
     crate://crates.io/python3-sys/0.3.0 \
     crate://crates.io/quote/1.0.3 \
     crate://crates.io/redox_syscall/0.1.56 \
     crate://crates.io/regex-syntax/0.6.17 \
     crate://crates.io/regex/1.3.6 \
+    crate://crates.io/rustc-demangle/0.1.16 \
     crate://crates.io/ryu/1.0.3 \
-    crate://crates.io/serde/1.0.105 \
-    crate://crates.io/serde_derive/1.0.105 \
-    crate://crates.io/serde_json/1.0.50 \
+    crate://crates.io/serde/1.0.106 \
+    crate://crates.io/serde_derive/1.0.106 \
+    crate://crates.io/serde_json/1.0.51 \
     crate://crates.io/slab/0.4.2 \
     crate://crates.io/syn/1.0.17 \
     crate://crates.io/thread_local/1.0.1 \
     crate://crates.io/time/0.1.42 \
     crate://crates.io/unicode-xid/0.2.0 \
+    crate://crates.io/version_check/0.9.1 \
+    crate://crates.io/void/1.0.2 \
     crate://crates.io/winapi-i686-pc-windows-gnu/0.4.0 \
     crate://crates.io/winapi-x86_64-pc-windows-gnu/0.4.0 \
     crate://crates.io/winapi/0.3.8 \
