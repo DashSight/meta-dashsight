@@ -1,7 +1,7 @@
 SUMMARY = "A program for insight into car driving and racing"
 LICENSE = "Apachev2"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=5335066555b14d832335aa4660d6c376"
-DEPENDS = "glib-2.0 gtk+3 gdk-pixbuf gpsd dconf pango clutter-gtk-1.0 libchamplain"
+DEPENDS = "glib-2.0 gtk+3 gdk-pixbuf gpsd dconf pango clutter-gtk-1.0 libchamplain libiio"
 
 inherit cargo systemd
 
