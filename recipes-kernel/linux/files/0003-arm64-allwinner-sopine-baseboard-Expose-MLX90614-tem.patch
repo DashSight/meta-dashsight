@@ -1,0 +1,30 @@
+From f97db808d5560fc76daa64da19870aaf5d921dc3 Mon Sep 17 00:00:00 2001
+From: Alistair Francis <alistair@alistair23.me>
+Date: Tue, 21 Apr 2020 23:17:53 -0700
+Subject: [PATCH] arm64: allwinner: sopine-baseboard: Expose MLX90614 temp
+
+Signed-off-by: Alistair Francis <alistair@alistair23.me>
+---
+ .../boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts      | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
+index 9ea25c57929e..28d987d60c56 100644
+--- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
++++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
+@@ -184,6 +184,12 @@ lsm9ds1-magn@1e {
+ 		interrupt-parent = <&pio>;
+ 		interrupts = <2 7 IRQ_TYPE_EDGE_RISING>; /* PC7 */
+         };
++
++	mlx90614@5a {
++		compatible = "melexis,mlx90614";
++		reg = <0x5a>;
++		wakeup-gpios = <&pio 7 3 GPIO_ACTIVE_HIGH>; /* PH3 */
++	};
+ };
+ 
+ &reg_ldo_io0 {
+-- 
+2.26.0
+
