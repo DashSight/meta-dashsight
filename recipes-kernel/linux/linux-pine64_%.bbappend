@@ -5,4 +5,5 @@ SRC_URI += "file://0001-sun50i-a64-Enable-serial2-and-serial3.patch \
             file://0003-arm64-allwinner-sopine-baseboard-Expose-MLX90614-tem.patch \
             file://imu.cfg \
             file://temp.cfg \
+            file://pps.cfg \
            "
