@@ -1,7 +1,7 @@
-From f97db808d5560fc76daa64da19870aaf5d921dc3 Mon Sep 17 00:00:00 2001
+From 9bc98405616d31c3f08581d313de4b5d7349abb3 Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Tue, 21 Apr 2020 23:17:53 -0700
-Subject: [PATCH] arm64: allwinner: sopine-baseboard: Expose MLX90614 temp
+Subject: [PATCH 3/5] arm64: allwinner: sopine-baseboard: Expose MLX90614 temp
 
 Signed-off-by: Alistair Francis <alistair@alistair23.me>
 ---
@@ -26,5 +26,5 @@ index 9ea25c57929e..28d987d60c56 100644
  
  &reg_ldo_io0 {
 -- 
-2.26.0
+2.26.2
 
