@@ -1,8 +1,8 @@
-From dec5731dd0c600f61cdb4bc25e3607031498a60b Mon Sep 17 00:00:00 2001
+From 21bedefc79afd6637233cca559fa5b8b10e32e60 Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Mon, 27 Apr 2020 19:10:46 -0700
-Subject: [PATCH 5/5] arm64: allwinner: sopine-baseboard: Connect the 1-wire
- temp
+Subject: [PATCH 6/6] arm64: allwinner: sopine-baseboard: Connect the 1-wire
+ temp sensor
 
 Signed-off-by: Alistair Francis <alistair@alistair23.me>
 ---
@@ -10,12 +10,12 @@ Signed-off-by: Alistair Francis <alistair@alistair23.me>
  1 file changed, 5 insertions(+)
 
 diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-index 4dadf798f423..f55e9a396996 100644
+index 518ee157cdfb..c94633cf9eaf 100644
 --- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 @@ -61,6 +61,11 @@ pps {
  		compatible = "pps-gpio";
- 		gpios = <2 8 IRQ_TYPE_EDGE_RISING>; /* PC8 */
+ 		gpios = <&pio 2 8 IRQ_TYPE_EDGE_RISING>; /* PC8 */
  	};
 +
 +	onewire {

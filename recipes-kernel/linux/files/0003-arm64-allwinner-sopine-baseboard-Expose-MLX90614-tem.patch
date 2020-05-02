@@ -1,7 +1,7 @@
-From 9bc98405616d31c3f08581d313de4b5d7349abb3 Mon Sep 17 00:00:00 2001
+From 3e51e365c96f1812dd96c29e609c5b8658e2b6d8 Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Tue, 21 Apr 2020 23:17:53 -0700
-Subject: [PATCH 3/5] arm64: allwinner: sopine-baseboard: Expose MLX90614 temp
+Subject: [PATCH 4/6] arm64: allwinner: sopine-baseboard: Expose MLX90614 temp
 
 Signed-off-by: Alistair Francis <alistair@alistair23.me>
 ---
@@ -9,10 +9,10 @@ Signed-off-by: Alistair Francis <alistair@alistair23.me>
  1 file changed, 6 insertions(+)
 
 diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-index 9ea25c57929e..28d987d60c56 100644
+index 7907364edb73..105f8695a99d 100644
 --- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-@@ -184,6 +184,12 @@ lsm9ds1-magn@1e {
+@@ -212,6 +212,12 @@ lsm9ds1-magn@1e {
  		interrupt-parent = <&pio>;
  		interrupts = <2 7 IRQ_TYPE_EDGE_RISING>; /* PC7 */
          };
