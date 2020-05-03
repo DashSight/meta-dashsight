@@ -1,7 +1,7 @@
-From 37ea5a3c01c429a9a18af8b24df4ab492095943b Mon Sep 17 00:00:00 2001
+From 44c7edb00caf67d81ddc054797f5af424bd0949c Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Sun, 26 Apr 2020 21:11:22 -0700
-Subject: [PATCH 5/6] arm64: allwinner: sopine-baseboard: Connect the PPS
+Subject: [PATCH] arm64: allwinner: sopine-baseboard: Connect the PPS
 
 Signed-off-by: Alistair Francis <alistair@alistair23.me>
 ---
@@ -9,7 +9,7 @@ Signed-off-by: Alistair Francis <alistair@alistair23.me>
  1 file changed, 5 insertions(+)
 
 diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-index 105f8695a99d..518ee157cdfb 100644
+index bfd3d5d92067..0a38b060383e 100644
 --- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 @@ -56,6 +56,11 @@ backlight: backlight {
@@ -19,11 +19,8 @@ index 105f8695a99d..518ee157cdfb 100644
 +
 +	pps {
 +		compatible = "pps-gpio";
-+		gpios = <&pio 2 8 IRQ_TYPE_EDGE_RISING>; /* PC8 */
++		gpios = <&pio 2 7 IRQ_TYPE_EDGE_RISING>; /* PC7 */
 +	};
  };
  
  &ac_power_supply {
--- 
-2.26.2
-
