@@ -30,7 +30,7 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/cairo-sys-rs/0.9.2 \
     crate://crates.io/cc/1.0.52 \
     crate://crates.io/cfg-if/0.1.10 \
-    crate://crates.io/chrono/0.4.11 \
+    crate://crates.io/chrono/0.4.13 \
     crate://crates.io/cloudabi/0.0.3 \
     crate://crates.io/cmake/0.1.42 \
     crate://crates.io/color_quant/1.0.1 \
@@ -45,11 +45,11 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/deflate/0.8.4 \
     crate://crates.io/dirs-sys/0.3.4 \
     crate://crates.io/dirs/2.0.2 \
-    crate://crates.io/dwrote/0.10.0 \
+    crate://crates.io/dwrote/0.11.0 \
     crate://crates.io/error-chain/0.12.2 \
     crate://crates.io/expat-sys/2.1.6 \
     crate://crates.io/float-ord/0.2.0 \
-    crate://crates.io/font-kit/0.6.0 \
+    crate://crates.io/font-kit/0.7.1 \
     crate://crates.io/foreign-types-shared/0.1.1 \
     crate://crates.io/foreign-types/0.3.2 \
     crate://crates.io/freetype/0.4.1 \
@@ -108,13 +108,12 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/pathfinder_simd/0.5.0 \
     crate://crates.io/pin-utils/0.1.0 \
     crate://crates.io/pkg-config/0.3.17 \
-    crate://crates.io/plotters/0.2.14 \
+    crate://crates.io/plotters/0.2.15 \
     crate://crates.io/png/0.16.3 \
     crate://crates.io/proc-macro-hack/0.5.15 \
     crate://crates.io/proc-macro-nested/0.1.4 \
-    crate://crates.io/proc-macro2/1.0.12 \
+    crate://crates.io/proc-macro2/1.0.19 \
     crate://crates.io/python3-sys/0.5.0 \
-    crate://crates.io/quote/1.0.4 \
     crate://crates.io/rand/0.6.5 \
     crate://crates.io/rand_chacha/0.1.1 \
     crate://crates.io/rand_core/0.3.1 \
@@ -139,15 +138,15 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/same-file/1.0.6 \
     crate://crates.io/semver-parser/0.7.0 \
     crate://crates.io/semver/0.9.0 \
-    crate://crates.io/serde/1.0.106 \
-    crate://crates.io/serde_derive/1.0.106 \
-    crate://crates.io/serde_json/1.0.52 \
+    crate://crates.io/serde/1.0.115 \
+    crate://crates.io/serde_derive/1.0.115 \
+    crate://crates.io/serde_json/1.0.57 \
     crate://crates.io/servo-fontconfig-sys/4.0.9 \
     crate://crates.io/servo-fontconfig/0.4.0 \
     crate://crates.io/servo-freetype-sys/4.0.5 \
     crate://crates.io/slab/0.4.2 \
     crate://crates.io/stb_truetype/0.3.1 \
-    crate://crates.io/syn/1.0.18 \
+    crate://crates.io/syn/1.0.38 \
     crate://crates.io/thread_local/1.0.1 \
     crate://crates.io/time/0.1.43 \
     crate://crates.io/typenum/1.12.0 \
