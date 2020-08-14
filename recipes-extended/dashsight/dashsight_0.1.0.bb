@@ -167,7 +167,7 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/winapi-x86_64-pc-windows-gnu/0.4.0 \
     crate://crates.io/winapi/0.3.8 \
     crate://crates.io/wio/0.2.2 \
-    git://github.com/alistair23/champlain.git;protocol=https;nobranch=1;name=champlain;destsuffix=champlain \
+    git://github.com/DashSight/champlain.git;protocol=https;nobranch=1;name=champlain;destsuffix=champlain \
     file://dashsight.conf \
     file://dashsight.service \
           "
