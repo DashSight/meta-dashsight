@@ -114,6 +114,7 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/proc-macro-nested/0.1.4 \
     crate://crates.io/proc-macro2/1.0.19 \
     crate://crates.io/python3-sys/0.5.0 \
+    crate://crates.io/quote/1.0.4 \
     crate://crates.io/rand/0.6.5 \
     crate://crates.io/rand_chacha/0.1.1 \
     crate://crates.io/rand_core/0.3.1 \
