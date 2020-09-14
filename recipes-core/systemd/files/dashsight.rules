@@ -1,2 +1,2 @@
-KERNEL=="ttyS2", RUN+="/bin/stty -F /dev/ttyS2 115200 raw -echo"
+KERNEL=="ttyS2", RUN+="/bin/stty -F /dev/ttyS2 38400 raw -echo"
 
