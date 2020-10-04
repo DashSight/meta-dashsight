@@ -3,10 +3,16 @@ Description=DashSight
 DefaultDependencies=no
 After=systemd-user-sessions.service systemd-logind.service
 
+# If the app fails to start 3 times in 5 seconds reboot the system
+# This generally occurs when the touch screen doesn't start and
+# causes weston to fail to start
+StartLimitBurst=3
+StartLimitIntervalSec=5
+StartLimitAction=reboot
+
 [Service]
 Type=simple
 Restart=on-failure
-RestartSec=2
 EnvironmentFile=-/etc/default/dashsight.conf
 WorkingDirectory=@LIBEXECDIR@/dashsight/
 ExecStart=@BINDIR@/dashsight
