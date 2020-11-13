@@ -7,28 +7,28 @@ inherit cargo systemd
 
 SRCREV = "${AUTOREV}"
 SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
-    crate://crates.io/addr2line/0.13.0 \
+    crate://crates.io/addr2line/0.14.0 \
     crate://crates.io/adler/0.2.3 \
     crate://crates.io/adler32/1.2.0 \
-    crate://crates.io/aho-corasick/0.7.14 \
+    crate://crates.io/aho-corasick/0.7.15 \
     crate://crates.io/ahrs/0.3.0 \
-    crate://crates.io/anyhow/1.0.33 \
+    crate://crates.io/anyhow/1.0.34 \
     crate://crates.io/approx/0.3.2 \
     crate://crates.io/arrayref/0.3.6 \
     crate://crates.io/arrayvec/0.5.2 \
     crate://crates.io/atk-sys/0.10.0 \
     crate://crates.io/atk/0.9.0 \
     crate://crates.io/autocfg/1.0.1 \
-    crate://crates.io/backtrace/0.3.53 \
+    crate://crates.io/backtrace/0.3.54 \
     crate://crates.io/base64/0.12.3 \
     crate://crates.io/bitflags/1.2.1 \
-    crate://crates.io/blake2b_simd/0.5.10 \
+    crate://crates.io/blake2b_simd/0.5.11 \
     crate://crates.io/bumpalo/3.4.0 \
     crate://crates.io/bytemuck/1.4.1 \
     crate://crates.io/byteorder/1.3.4 \
     crate://crates.io/cairo-rs/0.9.1 \
     crate://crates.io/cairo-sys-rs/0.10.0 \
-    crate://crates.io/cc/1.0.61 \
+    crate://crates.io/cc/1.0.62 \
     crate://crates.io/cfg-if/0.1.10 \
     crate://crates.io/cfg-if/1.0.0 \
     crate://crates.io/chrono/0.4.19 \
@@ -57,15 +57,15 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/foreign-types-shared/0.1.1 \
     crate://crates.io/foreign-types/0.3.2 \
     crate://crates.io/freetype/0.4.1 \
-    crate://crates.io/futures-channel/0.3.7 \
-    crate://crates.io/futures-core/0.3.7 \
-    crate://crates.io/futures-executor/0.3.7 \
-    crate://crates.io/futures-io/0.3.7 \
-    crate://crates.io/futures-macro/0.3.7 \
-    crate://crates.io/futures-sink/0.3.7 \
-    crate://crates.io/futures-task/0.3.7 \
-    crate://crates.io/futures-util/0.3.7 \
-    crate://crates.io/futures/0.3.7 \
+    crate://crates.io/futures-channel/0.3.8 \
+    crate://crates.io/futures-core/0.3.8 \
+    crate://crates.io/futures-executor/0.3.8 \
+    crate://crates.io/futures-io/0.3.8 \
+    crate://crates.io/futures-macro/0.3.8 \
+    crate://crates.io/futures-sink/0.3.8 \
+    crate://crates.io/futures-task/0.3.8 \
+    crate://crates.io/futures-util/0.3.8 \
+    crate://crates.io/futures/0.3.8 \
     crate://crates.io/gdk-pixbuf-sys/0.10.0 \
     crate://crates.io/gdk-pixbuf/0.9.0 \
     crate://crates.io/gdk-sys/0.10.0 \
@@ -73,7 +73,7 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/generic-array/0.13.2 \
     crate://crates.io/getrandom/0.1.15 \
     crate://crates.io/gif/0.10.3 \
-    crate://crates.io/gimli/0.22.0 \
+    crate://crates.io/gimli/0.23.0 \
     crate://crates.io/gio-sys/0.10.1 \
     crate://crates.io/gio/0.9.1 \
     crate://crates.io/glib-macros/0.10.1 \
@@ -95,26 +95,26 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/jpeg-decoder/0.1.20 \
     crate://crates.io/js-sys/0.3.45 \
     crate://crates.io/lazy_static/1.4.0 \
-    crate://crates.io/libc/0.2.79 \
+    crate://crates.io/libc/0.2.80 \
     crate://crates.io/libiio-sys/0.2.0 \
     crate://crates.io/libm/0.2.1 \
     crate://crates.io/log/0.4.11 \
     crate://crates.io/lzw/0.10.0 \
     crate://crates.io/matrixmultiply/0.2.3 \
-    crate://crates.io/memchr/2.3.3 \
+    crate://crates.io/memchr/2.3.4 \
     crate://crates.io/miniz_oxide/0.3.7 \
     crate://crates.io/miniz_oxide/0.4.3 \
     crate://crates.io/nalgebra/0.21.1 \
     crate://crates.io/ncollide2d/0.23.2 \
     crate://crates.io/nix/0.16.1 \
     crate://crates.io/num-complex/0.2.4 \
-    crate://crates.io/num-integer/0.1.43 \
-    crate://crates.io/num-iter/0.1.41 \
+    crate://crates.io/num-integer/0.1.44 \
+    crate://crates.io/num-iter/0.1.42 \
     crate://crates.io/num-rational/0.2.4 \
-    crate://crates.io/num-rational/0.3.0 \
-    crate://crates.io/num-traits/0.2.12 \
-    crate://crates.io/object/0.21.1 \
-    crate://crates.io/once_cell/1.4.1 \
+    crate://crates.io/num-rational/0.3.2 \
+    crate://crates.io/num-traits/0.2.14 \
+    crate://crates.io/object/0.22.0 \
+    crate://crates.io/once_cell/1.5.2 \
     crate://crates.io/ordered-float/1.1.0 \
     crate://crates.io/pango-sys/0.10.0 \
     crate://crates.io/pango/0.9.1 \
@@ -134,11 +134,11 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/plotters/0.3.0 \
     crate://crates.io/png/0.15.3 \
     crate://crates.io/png/0.16.7 \
-    crate://crates.io/ppv-lite86/0.2.9 \
+    crate://crates.io/ppv-lite86/0.2.10 \
     crate://crates.io/proc-macro-crate/0.1.5 \
     crate://crates.io/proc-macro-error-attr/1.0.4 \
     crate://crates.io/proc-macro-error/1.0.4 \
-    crate://crates.io/proc-macro-hack/0.5.18 \
+    crate://crates.io/proc-macro-hack/0.5.19 \
     crate://crates.io/proc-macro-nested/0.1.6 \
     crate://crates.io/proc-macro2/1.0.24 \
     crate://crates.io/python3-sys/0.5.1 \
@@ -151,8 +151,8 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/rawpointer/0.2.1 \
     crate://crates.io/redox_syscall/0.1.57 \
     crate://crates.io/redox_users/0.3.5 \
-    crate://crates.io/regex-syntax/0.6.20 \
-    crate://crates.io/regex/1.4.1 \
+    crate://crates.io/regex-syntax/0.6.21 \
+    crate://crates.io/regex/1.4.2 \
     crate://crates.io/rust-argon2/0.8.2 \
     crate://crates.io/rustc-demangle/0.1.18 \
     crate://crates.io/rustc_version/0.2.3 \
@@ -176,8 +176,8 @@ SRC_URI = "git://github.com/DashSight/DashSight.git;branch=master \
     crate://crates.io/strum_macros/0.18.0 \
     crate://crates.io/syn/1.0.48 \
     crate://crates.io/system-deps/1.3.2 \
-    crate://crates.io/thiserror-impl/1.0.21 \
-    crate://crates.io/thiserror/1.0.21 \
+    crate://crates.io/thiserror-impl/1.0.22 \
+    crate://crates.io/thiserror/1.0.22 \
     crate://crates.io/thread_local/1.0.1 \
     crate://crates.io/time/0.1.44 \
     crate://crates.io/toml/0.5.7 \
