@@ -1,4 +1,4 @@
-From 80a7a2c0d4bef32a7876dd4deb8007e3731112de Mon Sep 17 00:00:00 2001
+From 6ff4f0261a6e3ae3f963180f51235eb471317915 Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Wed, 29 Apr 2020 11:59:44 -0700
 Subject: [PATCH] arm64: allwinner: sopine-baseboard: Expose LSM9DS1 IMU via
@@ -10,7 +10,7 @@ Signed-off-by: Alistair Francis <alistair@alistair23.me>
  1 file changed, 28 insertions(+)
 
 diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-index c11b5737507e..70c428f67ab3 100644
+index fc803f20ecd8..8d79b6a141ae 100644
 --- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 @@ -148,6 +148,34 @@ hdmi_out_con: endpoint {

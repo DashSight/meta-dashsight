@@ -1,4 +1,4 @@
-From bff8b2a77e39bd0e53f9d6fa5073a8e95ca30537 Mon Sep 17 00:00:00 2001
+From 372581fd63fe1c47f7a57d6bbca7e931b5a7bbe7 Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Mon, 27 Apr 2020 19:10:46 -0700
 Subject: [PATCH] arm64: allwinner: sopine-baseboard: Connect the 1-wire temp
@@ -10,7 +10,7 @@ Signed-off-by: Alistair Francis <alistair@alistair23.me>
  1 file changed, 5 insertions(+)
 
 diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-index 722d61f1f34b..4f2d32db2000 100644
+index 0cbfe5a4465d..5d6c64ee20ef 100644
 --- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 @@ -61,6 +61,11 @@ pps {

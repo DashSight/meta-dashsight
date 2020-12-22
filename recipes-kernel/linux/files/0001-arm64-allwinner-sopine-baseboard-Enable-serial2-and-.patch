@@ -1,4 +1,4 @@
-From af3d3969c2775b43e75dd9d9e4384a70c3f4bf1c Mon Sep 17 00:00:00 2001
+From bc69559e11eb4b08427ae2fab2f2ea5c6b85ee10 Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Sat, 9 Nov 2019 19:51:37 -0800
 Subject: [PATCH] arm64: allwinner: sopine-baseboard: Enable serial2 and
@@ -10,10 +10,10 @@ Signed-off-by: Alistair Francis <alistair@alistair23.me>
  1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-index 5b825e628df2..c11b5737507e 100644
+index fac2e1665a45..fc803f20ecd8 100644
 --- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-@@ -289,14 +289,14 @@ bluetooth {
+@@ -292,14 +292,14 @@ bluetooth {
  &uart2 {
  	pinctrl-names = "default";
  	pinctrl-0 = <&uart2_pins>;

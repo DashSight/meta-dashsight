@@ -1,4 +1,4 @@
-From 3f40193f0a74012635fa9110389f25b29f9c4fc3 Mon Sep 17 00:00:00 2001
+From 2f047c0f8bc11a59a3b800b9a5ea52725eaa88c1 Mon Sep 17 00:00:00 2001
 From: Alistair Francis <alistair@alistair23.me>
 Date: Tue, 21 Apr 2020 23:17:53 -0700
 Subject: [PATCH] arm64: allwinner: sopine-baseboard: Expose MLX90614 temp
@@ -9,10 +9,10 @@ Signed-off-by: Alistair Francis <alistair@alistair23.me>
  1 file changed, 12 insertions(+)
 
 diff --git a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-index 70c428f67ab3..bfd3d5d92067 100644
+index 8d79b6a141ae..7d1dfd986691 100644
 --- a/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
 +++ b/arch/arm64/boot/dts/allwinner/sun50i-a64-sopine-baseboard.dts
-@@ -192,6 +192,18 @@ gt911@5d {
+@@ -195,6 +195,18 @@ gt911@5d {
  	};
  };
  
